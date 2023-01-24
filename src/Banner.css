@@ -1,0 +1,35 @@
+.banner__root header.banner__header {
+  box-shadow: none;
+  background: linear-gradient(262.57deg, #194233 19.44%, #0b7d54 42.5%, #297056 71.52%);
+  height: 60px;
+}
+
+.banner__root a {
+  color: #f5f5f5 !important;
+  text-decoration: none;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  border-bottom: 1px solid white;
+}
+
+.banner__root a:hover {
+  color: white;
+}
+
+.banner__title {
+  flex-grow: 1 !important;
+  text-align: center !important;
+  border: 1px solid transparent;
+}
+
+.banner__title p {
+  color: #f5f5f5 !important;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
