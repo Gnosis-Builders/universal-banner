@@ -1,6 +1,6 @@
 {
   "name": "universal-banner",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "A universal banner to be used for all Gnosis sites",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
