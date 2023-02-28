@@ -4,11 +4,15 @@ import './Banner.css'
 interface Props {
   header?: string
   children?: ReactNode
+  displayBanner?: boolean
   titleStyles?: object
   backgroundStyles?: object
 }
 
-const Banner: React.FC<Props> = ({ header, backgroundStyles, titleStyles, ...props }) => {
+const Banner: React.FC<Props> = ({ header, backgroundStyles, titleStyles, displayBanner, ...props }) => {
+  if (!displayBanner) {
+    return null
+  }
   return (
     <div className='banner__root'>
       <header className='banner__header' style={backgroundStyles}>
@@ -23,14 +27,13 @@ const Banner: React.FC<Props> = ({ header, backgroundStyles, titleStyles, ...pro
 }
 
 Banner.defaultProps = {
+  displayBanner: true,
   children: (
     <p>
-      Celebrate the New Year with the <b> Gnosis Builders 2023 NFT! </b> Minting{' '}
-      <a href='https://nft.gnosis.builders/' target='_blank' rel='noreferrer noopener'>
-        {' '}
-        now live
-      </a>
-      .
+      <a href='https://d14n.info' target='_blank' rel='noreferrer noopener'>
+        d14n.info
+      </a>{' '}
+      is now live! Discover decentralization metrics for Gnosis Chain and Ethereum networks.
     </p>
   ),
 }
